@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap');
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    direction: rtl; 
+    background-color: antiquewhite; 
+    color:rgb(81, 73, 61); 
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width:auto;
+    height: auto;
+    text-align: center;
+}
+
+.thumbnail {
+    width: 70%;
+}
+
+.letterTitle {
+    font-size: 38px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p, a {
+    font-size: 20px;
+}
+
+h1 {font-size: 28px;}
+h2 {font-size: 26px;}
+h3 {font-size: 25px;}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 9px;
+}
+
+figcaption {
+    color:rgb(81, 73, 61); 
+    font-style: oblique;
+    text-align: center;
+    font-size: 17px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px;
+}
+
+footer {
+    color:rgb(81, 73, 61); 
+    text-align: center;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:rgb(81, 73, 61);
+}
+
+a:hover {
+    color: rgb(40, 199, 0)
+}
+
+.centered {
+    text-align: center;
+}
+
+figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#poem {
+    text-align: center;
+    line-height: 15px;
+}
+
+/*darkmode*/
+@media (prefers-color-scheme: dark) {
+    /* If the operating system is using dark mode, then apply this CSS */
+    footer, figcaption {
+        color:rgb(211, 211, 211); 
+    }
+    a:link, a:visited {
+        color:antiquewhite;
+    }
+    a:hover {
+        color: rgb(40, 199, 0)
+    }
+    body {
+        background-color: rgb(81, 73, 61); 
+        color:antiquewhite; 
+    }
+}
+
+/*mobile devices*/
+@media screen and (max-width: 591px) {
+    main {
+        margin: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    h1 {
+        margin-right: 7px;
+    }
+    img {width: 88%;}
+    iframe {
+        width: 90%;
+        height: 200px;
+    }
+
+}
+
+/*larger screens*/
+@media screen and (min-width: 591px)  {
+    body {
+        width: 570px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        margin: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    h1 {font-size: 28px;}
+    h2 {font-size: 26px;}
+    h3 {font-size: 25px;}
+    p, a {font-size: 20px;}
+    figcaption {font-size: 17px;}
+    img {width: 88%;}
+    iframe {
+        width: 80%;
+        height: 200px;
+    }
+}
